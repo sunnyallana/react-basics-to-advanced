@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        Including React and ReactDOM in the project using their CDN links available at https://legacy.reactjs.org/docs/cdn-links.html
+        CDN links are available for both development and production versions of React and ReactDOM.
+        Have these links in the mentioned order to include React and ReactDOM in the project.
+    -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!--
+        We'll include Babel here using its CDN link available at https://babeljs.io/docs/en/browser.html. 
+        Since we are using React in our project, we'll include the standalone version of Babel.
+        With Babel, we can write JSX code in our React components.
+    -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Index Page</title>
+    <!--
+        We'll write our React code in the script tag with type as text/babel.
+        This is because we are using JSX in our React components.
+        Babel will compile the JSX code to JavaScript code.
+        Otherwise, JS default interpreter will not understand JSX code.
+    -->
+    <script type = "text/babel">
+        
+        // We'll use ReactDOM.render() method to render the JSX code to the DOM. This is obsolete now.
+
+        /* reactDOM.render(
+             <h1>Hello, World!</h1>, // What to render?
+             document.getElementById('name') // Where to render?
+        );
+        */
+
+        // Below is the new way to render the JSX code to the DOM using ReactDOM.createRoot() method. 
+        // This method returns a root object that can be used to render the JSX code to the DOM using the render() method.
+        
+        const root = ReactDOM.createRoot(document.querySelector("div"));
+        root.render(
+            "Hello, World!" // What to render?
+        );
+
+    </script>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
