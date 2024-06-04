@@ -1,0 +1,7 @@
+.container-fluid{
+    background-color: black;
+    color: white;
+    text-align: center;
+    /* vmax here is a relative unit that is based on the viewport's height. */
+    height: 100vmax; 
+}
