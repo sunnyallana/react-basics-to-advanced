@@ -9,3 +9,6 @@
     import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
     import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 7) Create more files inside src dir: Netflix(Footer|Header|Index|Main)Component.js
+8) Use different components by importing and calling them in the index file: 
+IMPORT: import { Component } from './components/indexComponent.js'
+CALL: <Component />

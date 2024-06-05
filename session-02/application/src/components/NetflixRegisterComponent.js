@@ -7,7 +7,7 @@ export function NetflixRegisterComponent(){
         // bg-dark is background color dark
         // p-3 is padding 3
         // text-white is text color white
-        <div className="container-fluid text-center mt-3 bg-dark p-3 text-white">
+        <div>
             <p />Ready to watch? Enter your email address
 
             {/* input-group is a bootstrap class that groups an input field and a button */}

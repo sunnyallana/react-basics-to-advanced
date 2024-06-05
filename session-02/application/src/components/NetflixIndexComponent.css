@@ -1,7 +1,22 @@
 .container-fluid{
-    background-color: black;
+    background-image: url('Netflix-Background.png');
+    /* Text color is set to white. */
     color: white;
+    /* The text is centered. */
     text-align: center;
+    /* This is a shorthand property that sets the background image to cover the entire container. */
+    background-size: contain;
     /* vmax here is a relative unit that is based on the viewport's height. */
     height: 100vmax; 
+}
+
+.box{
+    /* rgba is a color model that uses red, green, and blue to create a color. The last value is the alpha value, which is the opacity of the color. */
+    background-color: rgba(0,0,0,0.6);
+    height: 100vmax;
+    width: 100vmax;
+}
+
+section{
+    height: 400px;
 }
